@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type d | sed 's:/*[^/]\+/: :g' | awk '{print NF-1}' | awk '{a+=$1} END {print "Number of directories: "a-1"\nNumber of sub-directories: "a}'
