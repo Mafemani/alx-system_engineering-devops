@@ -1,0 +1,3 @@
+#!/bin/bash
+set | grep "^[[:alpha:]][[:alnum:]_]*=" ; env | grep "^[[:alpha:]][[:alnum:]_]*=" ; declare -F | awk '{print $3}'
+
